@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.genpact</groupId>
+	<artifactId>websocket-study</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>websocket-study Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.9</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>hamcrest-core</artifactId>
+					<groupId>org.hamcrest</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>javax.mail</artifactId>
+					<groupId>com.sun.mail</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency> 
+			  <groupId>jstl</groupId> 
+			    <artifactId>jstl</artifactId> 
+			      <version>1.2</version> 
+			</dependency> 
+			
+			<dependency> 
+			    <groupId>taglibs</groupId> 
+			      <artifactId>standard</artifactId> 
+			<version>1.1.2</version> 
+			</dependency> 
+
+
+		<!-- <dependency> <groupId>javax.websocket</groupId> <artifactId>javax.websocket-api</artifactId> <version>1.0</version> </dependency> -->
+
+
+	</dependencies>
+	<build>
+		<finalName>websocket-study</finalName>
+	</build>
+</project>
